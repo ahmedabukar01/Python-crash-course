@@ -17,9 +17,12 @@ print(f"the c type of triangle is: {pythagorean}")
 
 
 # Containers
-
-
-this_Tuple = (3,45, "ali", True) # Tuple
-this_List = [4,3,"bob", (3,9,"nur")] # this is list
+a_Tuple = (3,45, "ali", True) # Tuple
+a_List = [4,3,"bob", (3,9, 9, "nur")] # list.
     ## the difference b/w list and tuple is that a tuple cannot change (immutable) while you can change the values of list
-    
+a_List.append("another name")
+
+a_set = {3,4,"ahmed"} # set, every entry is unique .
+print(set(a_List)) # you can get the list with unique values only, no doublicates
+a_dictionary = {"name": "bob", "age": 34} # key value pair.
+
