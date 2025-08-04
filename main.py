@@ -57,15 +57,26 @@ import math
 # print(f"the counter is : {counter}")
 
 # for Loop
-test_list = [1,2,3,4,5]
-atest = {"a":"ahmed", "b": "nur", "date": 39}
+# test_list = [1,2,3,4,5]
+# atest = {"a":"ahmed", "b": "nur", "date": 39}
 
-for k in atest.keys():
-    print(k)
-    for v in atest.values():
-        print(v)
-        for i in atest.items():
-            print(i)
-            for k,v in atest.items():
-                print(k,v)
+# for k in atest.keys():
+#     print(k)
+#     for v in atest.values():
+#         print(v)
+#         for i in atest.items():
+#             print(i)
+#             for k,v in atest.items():
+#                 print(k,v)
+
+# Functions
+def testing_function(text="Hello World!", stop=4):
+    for i in range(stop):
+        if stop == 10:
+            print("You're Too loud!!!!")
+        else: 
+            print(text)
+        return "done"
     
+
+print(testing_function("here is the king", 12))
