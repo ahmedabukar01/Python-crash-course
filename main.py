@@ -69,14 +69,37 @@ import math
 #             for k,v in atest.items():
 #                 print(k,v)
 
-# Functions
-def testing_function(text="Hello World!", stop=4):
-    for i in range(stop):
-        if stop == 10:
-            print("You're Too loud!!!!")
-        else: 
-            print(text)
-        return "done"
+### Functions
+# def testing_function(text="Hello World!", stop=4):
+#     for i in range(stop):
+#         if stop == 10:
+#             print("You're Too loud!!!!")
+#         else: 
+#             print(text)
+#         return "done"
     
+# print(testing_function("here is the king", 12))
 
-print(testing_function("here is the king", 12))
+# Single Line if statement
+# age = 20
+# status = "Adult" if age > 20 else "Child"
+
+# ## list comprehension
+# simple_list=[]
+# for i in range(0,10,1):
+#     simple_list.append(i)
+# print(simple_list)
+
+# shortened_simple_list = [i for i in range(0,10,1)]
+# print(shortened_simple_list)
+
+# # more complex
+# shortened_simple_list = [f'{j}{i}' for i in range(0,10,1) for j in ['a', 'b', 'c']]
+# print(shortened_simple_list)
+
+# shortened_simple_list = [f'{j}{i}' for i in range(0,10,1) for j in ['a', 'b', 'c'] if j = 'a']
+# print(shortened_simple_list)
+
+### Lambda function
+double_value = lambda num: num * 2
+print(double_value(8))
