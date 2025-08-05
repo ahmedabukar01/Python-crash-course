@@ -100,6 +100,20 @@ import math
 # shortened_simple_list = [f'{j}{i}' for i in range(0,10,1) for j in ['a', 'b', 'c'] if j = 'a']
 # print(shortened_simple_list)
 
-### Lambda function
-double_value = lambda num: num * 2
-print(double_value(8))
+# ### Lambda function
+# double_value = lambda num: num * 2
+# print(double_value(8))
+
+# ### function as argument
+# random_list = [1,2,3,1223,9,4,50]
+# sorted_list = sorted(random_list)
+# print(sorted_list)
+
+# a_random_list = [("anna", 89), ("alex", 55), ("john", 22)]
+# a_sorted_list = sorted(a_random_list, key= lambda user_tuple: user_tuple[1]) ## It means: for each user_tuple in the list, use the second element (user_tuple[1], which is the number) as the value to sort by.
+# print(a_sorted_list)
+
+
+### exercise
+the_list = [f'{l}{n}' for l in ['a', 'b', 'c', 'd', 'e'] for n in range(1,6,1) if f'{l}{n}' != 'c3']
+print(the_list)
