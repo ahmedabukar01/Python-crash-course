@@ -169,7 +169,18 @@ import math
 
 
 
-### modules (e.x: import math)
+### modules / library (e.x: import math)
 import random
+import string
+from string import ascii_lowercase
+import support.main
+from support.main import MyClass
+
 random_number = random.randint(0,10)
 print(random_number)
+print(string.ascii_letters)
+print(ascii_lowercase)
+
+forignClass = support.main.MyClass()
+print(forignClass.a)
+forignClass.some_function()
