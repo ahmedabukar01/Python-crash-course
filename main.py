@@ -114,6 +114,62 @@ import math
 # print(a_sorted_list)
 
 
-### exercise
-the_list = [f'{l}{n}' for l in ['a', 'b', 'c', 'd', 'e'] for n in range(1,6,1) if f'{l}{n}' != 'c3']
-print(the_list)
+# ### exercise
+# the_list = [f'{l}{n}' for l in ['a', 'b', 'c', 'd', 'e'] for n in range(1,6,1) if f'{l}{n}' != 'c3']
+# print(the_list)
+
+
+# ### Classes
+# class ClassName:
+#     var_test = "Hello classes"
+
+#     def test_fun(self): # self is convention, you call call it other names, but it's MUST, function must get argument in class so that they can access attribute inside the class
+#         print("function in a class") ## self refers to any instance of the class and must be the first parameter for all methods  
+
+#     def another_func(self, test_param):
+#         print(test_param)
+
+# ## class instance
+# test = ClassName()
+# test.test_fun()
+# test.another_func("this is the best")
+
+
+# variables in class are attributes 
+# functions in class are methods
+
+
+# ### Dunder Methods (special methods in class)  __init__
+# class Manga:
+#     def __init__(self, health, manga):
+#         self.manga = manga
+#         self.health = health
+#         print('instance was created!')
+
+#     def __repr__(self):
+#         return f'a manga with {self.health} hp'
+
+# ### inheritence
+# class Fight:
+#     def __init__(self, health):
+#         self.health = health
+
+#     def attack(self, target):
+#         target.health -= 10
+
+# ## inheritance child
+# class Monster(Fight):
+#     def __init__(self, health):
+#         super().__init__(health)
+
+# manga = Manga(100, 100)
+# monster = Monster(100)
+# monster.attack(manga)
+# print(manga)  # this output is from __repr__
+
+
+
+### modules (e.x: import math)
+import random
+random_number = random.randint(0,10)
+print(random_number)
